@@ -1,4 +1,7 @@
 package be.vdab.library.multimedia.audiovisual;
 
-public class DVD {
+import javax.persistence.Entity;
+
+@Entity
+public class DVD extends AudioVisual{
 }

@@ -7,8 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class SaveMultiMedia {
     public static void main(String[] args) {
@@ -23,7 +22,6 @@ public class SaveMultiMedia {
 
             MultiMedia m = new Book();
             m.setAuthor("J.K Rollin'");
-
 
             em.persist(m);
             tx.commit();
