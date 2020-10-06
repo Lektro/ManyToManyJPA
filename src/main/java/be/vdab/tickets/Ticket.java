@@ -1,4 +1,4 @@
-package be.vdab;
+package be.vdab.tickets;
 
 import javax.persistence.*;
 
