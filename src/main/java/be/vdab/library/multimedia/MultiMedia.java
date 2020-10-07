@@ -97,6 +97,7 @@ public abstract class MultiMedia {
                 ", author='" + author + '\'' +
                 ", pubDate=" + pubDate +
                 ", publisher='" + publisher + '\'' +
+                ", subtitles=" + subtitles +
                 '}';
     }
 }
