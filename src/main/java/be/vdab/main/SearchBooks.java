@@ -16,7 +16,6 @@ public class SearchBooks {
             EntityTransaction tx = em.getTransaction();
             tx.begin();
 
-/*
             TypedQuery<Book> query = em.createQuery("select b from Book as b",Book.class);
 
             List<Book> books = query.getResultList();
@@ -25,9 +24,8 @@ public class SearchBooks {
             }
             tx.commit();
             System.out.println("Books Retrieved");
-*/
 
-            TypedQuery<DVD> queryDVD = em.createQuery("select d from DVD as d",DVD.class);
+/*            TypedQuery<DVD> queryDVD = em.createQuery("select d from DVD as d",DVD.class);
             List<DVD> dvds = queryDVD.getResultList();
 
 
@@ -35,7 +33,7 @@ public class SearchBooks {
                 System.out.println(d);
             }
 
-            System.out.println("DVD Retrieved");
+            System.out.println("DVD Retrieved");*/
 
         } finally {
             if (em != null)

@@ -15,8 +15,9 @@ public abstract class MultiMedia {
     private String author;
     private LocalDate pubDate;
     private String publisher;
+    private int subtitles;
 
-    public MultiMedia(long id, String title, String author, LocalDate pubDate, String publisher) {
+    public MultiMedia(long id, String title, String author, LocalDate pubDate, String publisher, int subtitles) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -65,6 +66,14 @@ public abstract class MultiMedia {
 
     public void setPublisher(String publisher) {
         this.publisher = publisher;
+    }
+
+    public int getSubtitles() {
+        return subtitles;
+    }
+
+    public void setSubtitles(int subtitles) {
+        this.subtitles = subtitles;
     }
 
     @Override

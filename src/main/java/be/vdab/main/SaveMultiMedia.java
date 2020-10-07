@@ -1,6 +1,7 @@
 package be.vdab.main;
 
 import be.vdab.library.multimedia.MultiMedia;
+import be.vdab.library.multimedia.audiovisual.AudioVisual;
 import be.vdab.library.multimedia.audiovisual.DVD;
 import be.vdab.library.multimedia.books.Book;
 
@@ -28,11 +29,13 @@ public class SaveMultiMedia {
             m.setTitle("The Prisoner Of Azkaban");
             m.setPubDate(LocalDate.of(1989,7,26));
             m.setPublisher("Voldemort LLC");
-            MultiMedia d = new DVD();
+
+            AudioVisual d = new AudioVisual();
             d.setTitle("Jumpen doe je zo!");
             d.setAuthor("Patrick J");
-            ((DVD) d).setSubtitles(1);
-
+            d.setDuration(120);
+            d.setPublisher("Start Stop Records");
+            d.setSubtitles(1);
             em.persist(m);
             em.persist(d);
             tx.commit();
