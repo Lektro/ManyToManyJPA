@@ -80,4 +80,14 @@ public abstract class MultiMedia {
         return Objects.hash(getId());
     }
 
+    @Override
+    public String toString() {
+        return "MultiMedia{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", pubDate=" + pubDate +
+                ", publisher='" + publisher + '\'' +
+                '}';
+    }
 }
