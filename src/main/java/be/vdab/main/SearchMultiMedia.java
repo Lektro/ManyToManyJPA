@@ -5,7 +5,7 @@ import be.vdab.library.multimedia.books.Book;
 import javax.persistence.*;
 import java.util.List;
 
-public class SearchBooks {
+public class SearchMultiMedia {
     public static void main(String[] args) {
         EntityManagerFactory emf = null;
         EntityManager em = null;
