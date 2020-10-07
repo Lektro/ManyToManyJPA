@@ -1,14 +1,10 @@
 package be.vdab.main;
 
-import be.vdab.library.multimedia.MultiMedia;
-import be.vdab.library.multimedia.audiovisual.DVD;
 import be.vdab.library.multimedia.books.Book;
-
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.util.List;
 
-public class Search {
+public class SearchBooks {
     public static void main(String[] args) {
         EntityManagerFactory emf = null;
         EntityManager em = null;
