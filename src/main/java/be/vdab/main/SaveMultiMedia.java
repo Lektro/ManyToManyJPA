@@ -30,6 +30,8 @@ public class SaveMultiMedia {
             m.setPublisher("Voldemort LLC");
             MultiMedia d = new DVD();
             d.setTitle("Jumpen doe je zo!");
+            d.setAuthor("Patrick J");
+            ((DVD) d).setSubtitles(1);
 
             em.persist(m);
             em.persist(d);
